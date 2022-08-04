@@ -8,7 +8,7 @@
   *::before {
     font-family: "Josefin Sans", sans-serif;
   }
-
+ 
   :root {
     --clr-primary: #3a7cfd;
     --clr-white: #fff;
@@ -20,11 +20,30 @@
   }
 
   [data-theme="dark"] {
-    --clr-white: #25273D;
+    --clr-white: #25273d;
     --clr-neutral-100: #171823;
-    --clr-neutral-200: #393A4B;;
-    --clr-neutral-300: #4D5067;
-    --clr-neutral-500: #5B5E7E;
-    --clr-neutral-800: #C8CBE7;
+    --clr-neutral-200: #393a4b;
+    --clr-neutral-300: #4d5067;
+    --clr-neutral-500: #5b5e7e;
+    --clr-neutral-800: #c8cbe7;
+  }
+}
+
+@layer components {
+  .container {
+    @apply mx-auto;
+    width: 96%;
+  }
+
+  @media screen(sm) {
+    .container {
+      width: 20.4375rem;
+    }
+  }
+
+  @media screen(xl) {
+    .container {
+      width: 33.75rem;
+    }
   }
 }

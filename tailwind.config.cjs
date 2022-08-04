@@ -7,7 +7,7 @@ module.exports = {
   theme: {
     screens: {
       sm: '22rem',
-      md: '45rem'
+      xl: '45rem'
     },
 
     colors: {
@@ -25,6 +25,7 @@ module.exports = {
       backgroundImage: {
         "gradient": "linear-gradient hsl(192, 100%, 67%) to hsl(280, 87%, 65%)"
       }
+
     },
   },
   plugins: [],
