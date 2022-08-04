@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  *,
+  *::after,
+  *::before {
+    font-family: "Josefin Sans", sans-serif;
+  }
+
+  :root {
+    --clr-primary: #3a7cfd;
+    --clr-white: #fff;
+    --clr-neutral-100: #fafafa;
+    --clr-neutral-200: #e3e4f1;
+    --clr-neutral-300: #d1d2da;
+    --clr-neutral-500: #9495a5;
+    --clr-neutral-800: #494c6b;
+  }
+
+  [data-theme="dark"] {
+    --clr-white: #25273D;
+    --clr-neutral-100: #171823;
+    --clr-neutral-200: #393A4B;;
+    --clr-neutral-300: #4D5067;
+    --clr-neutral-500: #5B5E7E;
+    --clr-neutral-800: #C8CBE7;
+  }
+}
