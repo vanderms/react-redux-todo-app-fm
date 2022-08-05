@@ -7,7 +7,7 @@ export interface ThemeState {
 const themeSlice = createSlice({
   name: "theme",
   initialState: {
-    mode: "light",
+    mode: "dark",
   } as ThemeState,
   reducers: {
     toggleTheme: (state) => {

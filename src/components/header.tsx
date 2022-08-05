@@ -19,11 +19,17 @@ export function Header() {
           className="max-w-none absolute top-0 left-0 w-full h-full object-cover object-center"
         />
       </picture>
-      <div className="container relative z-10 flex items-center justify-between">
-        <h1 className="text-[2.5rem] leading-[1] tracking-[15px] text-[#fff] font-bold">
-          TODO
-        </h1>
-        <button aria-label="toggle theme" onClick={() => dispatch(toggleTheme())}>
+      <div className="container relative z-10 flex items-center justify-between xl:h-[2.5rem]">
+        <h1 className="sr-only"> Todo</h1>
+        <div className="w-[6.8125rem] xl:w-[10.4375rem]">
+          <img src="/images/logo.svg" alt="" className="xl:" />
+        </div>
+
+        <button
+          aria-label="toggle theme"
+          onClick={() => dispatch(toggleTheme())}
+          className="w-5 xl:w-[1.625rem]"
+        >
           <img src={`icons/${mode === "light" ? "icon-moon" : "icon-sun"}.svg`} alt="" />
         </button>
       </div>

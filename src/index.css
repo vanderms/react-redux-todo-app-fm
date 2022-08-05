@@ -8,7 +8,7 @@
   *::before {
     font-family: "Josefin Sans", sans-serif;
   }
- 
+
   :root {
     --clr-primary: #3a7cfd;
     --clr-white: #fff;
@@ -17,6 +17,8 @@
     --clr-neutral-300: #d1d2da;
     --clr-neutral-500: #9495a5;
     --clr-neutral-800: #494c6b;
+    --gradient: linear-gradient(135deg, #55ddff 0%, #c058f3 100%);
+    --shadow: 0px 35px 50px -15px rgba(194, 195, 214, 0.5);
   }
 
   [data-theme="dark"] {
@@ -26,6 +28,7 @@
     --clr-neutral-300: #4d5067;
     --clr-neutral-500: #5b5e7e;
     --clr-neutral-800: #c8cbe7;
+    --shadow: 0px 35px 50px -15px rgba(0, 0, 0, 0.5);
   }
 }
 
